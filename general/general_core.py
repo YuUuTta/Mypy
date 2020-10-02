@@ -20,4 +20,11 @@ def CountDays(year,month):
         elif year_4%4!=0:
             days=28    
     return str(days)
-     
+
+def Month1to13(month):
+  month=int(month)
+  if month==12:
+    month=1
+  else:
+    pass
+  return month     
