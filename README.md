@@ -9,12 +9,18 @@
 ### import
 
 モジュールとして用いる場合は`sys`でモジュールサーチパスを追加してからimportしてください。
-
+myh5モジュールを使用したい場合、
 ```python
 import sys
 sys.path.append("Mypy/myh5/main_h5/")
 import main_h5
 ```
+generalモジュールを使用したい場合、
+```python
+import sys
+sys.path.append("Mypy/general/main_general")
+import main_general
 
+```
 
 
