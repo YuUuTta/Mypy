@@ -23,7 +23,7 @@ def CountDays(year,month):
 
 def Month1to13(month):
     month=int(month)
-    if month==12:
+    if month==13:
         month=1
     else:
         pass
