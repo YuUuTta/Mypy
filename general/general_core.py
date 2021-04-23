@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def IntegerChecker(x):
     x=int(x)
     if x<=9:
@@ -27,4 +30,14 @@ def Month1to13(month):
         month=1
     else:
         pass
-    return month     
+    return month    
+
+def XList(sep=1):
+  x_index = []
+  year_list = list(np.arange(2001,2020,1))
+  for inx,year in enumerate(year_list):
+    if inx%sep == 0:
+      for month in range(1,13,1):
+        if month == 1:
+          x_index.append(str(year)+"/"+IntegerChecker(month))
+  return x_index
